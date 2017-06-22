@@ -28,6 +28,8 @@ dependencies {
     compile group: 'org.jsoup', name: 'jsoup', version: '1.10.3'
     // https://mvnrepository.com/artifact/com.algolia/algoliasearch
     compile group: 'com.algolia', name: 'algoliasearch', version: '2.10.0'
+    // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-cloudsearch
+    compile group: 'com.amazonaws', name: 'aws-java-sdk-cloudsearch', version: '1.11.152'
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
