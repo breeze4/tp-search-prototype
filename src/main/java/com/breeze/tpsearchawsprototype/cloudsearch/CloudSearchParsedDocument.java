@@ -13,7 +13,7 @@ public class CloudSearchParsedDocument {
 
     private final String sourceUrl;
     private final String title;
-    private final String contents;
+    private final String content;
     private final String author;
     private final LocalDate postedDate;
 
@@ -22,13 +22,13 @@ public class CloudSearchParsedDocument {
     public CloudSearchParsedDocument(ScrapedDocument scrapedDocument,
                                      @JsonProperty("source_url") String sourceUrl,
                                      @JsonProperty String title,
-                                     @JsonProperty String contents,
+                                     @JsonProperty String content,
                                      @JsonProperty String author,
                                      @JsonProperty("posted_date") LocalDate postedDate) {
         this.scrapedDocument = scrapedDocument;
         this.sourceUrl = sourceUrl;
         this.title = title;
-        this.contents = contents;
+        this.content = content;
         this.author = author;
         this.postedDate = postedDate;
     }
@@ -42,8 +42,8 @@ public class CloudSearchParsedDocument {
         return title;
     }
 
-    public String getContents() {
-        return contents;
+    public String getContent() {
+        return content;
     }
 
     public String getAuthor() {
